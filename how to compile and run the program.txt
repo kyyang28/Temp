@@ -1,0 +1,17 @@
+
+/* Step 1: Compile JNIDemo.java program */
+1. javac JNIDemo.java
+
+/* Step 2: Compile native.c program */
+2. gcc -I/usr/lib/jvm/java-1.8.0-openjdk-amd64/include -I/usr/lib/jvm/java-1.8.0-openjdk-amd64/include/linux -fPIC -shared -o libnative.so native.c
+
+/* Step 3: Setup the library path to current folder since the libnative.so is in current folder */
+3. export LD_LIBRARY_PATH=.
+
+/* Step 4: Execute the program */
+4. java JNIDemo
+
+
+The output should be as follows
+
+Hello, world!
