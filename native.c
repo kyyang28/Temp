@@ -1,7 +1,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <jni.h>	// /usr/lib/jvm/java-1.8.0-openjdk-amd64/include/jni.h 
+#include <jni.h>	// /usr/lib/jvm/java-1.8.0-openjdk-amd64/include/jni.h
+
 
 jintArray c_hello(JNIEnv *env, jobject cls, jintArray arr);
 
